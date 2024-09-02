@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { TagContainer } from '../Tag/styles'
+import { Container } from '../../styles'
 
 export const Imagem = styled.div`
   position: relative;
@@ -10,7 +11,14 @@ export const Imagem = styled.div`
   background-size: cover;
   background-position: center;
   font-weight: bold;
-  padding-top: 340px;
+
+  ${Container} {
+    position: relative;
+    padding-top: 340px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 
   ${TagContainer} {
     position: absolute;

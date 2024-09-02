@@ -9,11 +9,13 @@ const Hero = () => (
   <Imagem style={{ backgroundImage: `url(${bannerImg})` }}>
     <Container>
       <Tag size="big">Destaque do dia</Tag>
-      <Titulo>Marvel&apos;s Spider-man: Miles Morales PS4 & PS5</Titulo>
-      <Precos>
-        De <span>R$ 250,00</span> <br />
-        por apenas R$ 99,90
-      </Precos>
+      <div>
+        <Titulo>Marvel&apos;s Spider-man: Miles Morales PS4 & PS5</Titulo>
+        <Precos>
+          De <span>R$ 250,00</span> <br />
+          por apenas R$ 99,90
+        </Precos>
+      </div>
       <Button title="Clique aqui e aproveite!" type="link" to="/produto">
         Aproveitar
       </Button>

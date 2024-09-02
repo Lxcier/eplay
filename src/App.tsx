@@ -19,7 +19,6 @@ function App() {
         <Header />
       </Container>
       <RouterProvider router={rotas} />
-      <Hero />
     </>
   )
 }
