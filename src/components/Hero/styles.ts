@@ -21,7 +21,7 @@ export const Imagem = styled.div`
   }
 
   ${TagContainer} {
-    position: absolute;
+    position: absolute !important;
     top: 32px;
   }
 `

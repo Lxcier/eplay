@@ -4,11 +4,10 @@ import { Props } from '.'
 
 export const TagContainer = styled.div<Props>`
   display: inline-block;
-  background-color: ${cores.verde};
-  color: ${cores.branca};
-  font-size: ${(props) => (props.size === 'big' ? '16px' : '10px')};
-  font-weight: bold;
   padding: ${(props) => (props.size === 'big' ? '8px 16px' : '4px 8px')};
   border-radius: 8px;
-  position: absolute;
+  color: ${cores.branca};
+  background-color: ${cores.verde};
+  font-weight: bold;
+  font-size: ${(props) => (props.size === 'big' ? '16px' : '10px')};
 `

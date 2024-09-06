@@ -3,11 +3,17 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Container, GlobalStyle } from './styles'
 import Header from './components/Header'
 import Hero from './components/Hero'
+import ProductsList from './components/ProductList'
 
 const rotas = createBrowserRouter([
   {
     path: '/',
-    element: <Hero />
+    element: (
+      <>
+        <Hero />
+        <ProductsList title="Promoções" background="gray" />
+      </>
+    )
   }
 ])
 
