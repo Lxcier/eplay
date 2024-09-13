@@ -1,23 +1,32 @@
-import { title } from 'process'
 import Product from '../Product'
 import { Container as Master, List } from './styles'
 import { Container as Inner } from '../../styles'
 
-type Props = {
+import Game from '../../models/Game'
+
+export type Props = {
   title: string
   background: 'gray' | 'black'
+  games: Game[]
 }
 
-const ProductsList = ({ background, title }: Props) => {
+const ProductsList = ({ background, title, games }: Props) => {
   return (
-    <Master>
+    <Master background={background}>
       <Inner>
         <h2>{title}</h2>
         <List>
-          <Product />
-          <Product />
-          <Product />
-          <Product />
+          {games.map((game) => (
+            <Product
+              key={game.id}
+              title={game.title}
+              description={game.description}
+              category={game.category}
+              system={game.system}
+              infos={game.infos}
+              image={game.image}
+            />
+          ))}
         </List>
       </Inner>
     </Master>
